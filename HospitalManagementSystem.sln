@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.DataAccess", "Hospital.DataAccess\Hospital.DataAccess.csproj", "{2E4E91B2-0917-4F42-8DDD-4E3B7A082A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.BusinessLogic", "Hospital.BusinessLogic\Hospital.BusinessLogic.csproj", "{0A205CDA-2833-45A6-AE4F-A0955005DDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.ServiceLayer", "Hospital.ServiceLayer\Hospital.ServiceLayer.csproj", "{C4D1827E-9655-47BD-9299-72DDFF9E80C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Presentation", "Hospital.Presentation\Hospital.Presentation.csproj", "{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E4E91B2-0917-4F42-8DDD-4E3B7A082A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4E91B2-0917-4F42-8DDD-4E3B7A082A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4E91B2-0917-4F42-8DDD-4E3B7A082A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4E91B2-0917-4F42-8DDD-4E3B7A082A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A205CDA-2833-45A6-AE4F-A0955005DDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A205CDA-2833-45A6-AE4F-A0955005DDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A205CDA-2833-45A6-AE4F-A0955005DDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A205CDA-2833-45A6-AE4F-A0955005DDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D1827E-9655-47BD-9299-72DDFF9E80C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D1827E-9655-47BD-9299-72DDFF9E80C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D1827E-9655-47BD-9299-72DDFF9E80C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D1827E-9655-47BD-9299-72DDFF9E80C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
