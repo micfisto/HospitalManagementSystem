@@ -14,6 +14,8 @@ public class HospitalContext : DbContext
     public DbSet<Department> Departments { get; set; }
     public DbSet<DoctorAppointment> DoctorAppointments { get; set; }
     public DbSet<Diagnosis> Diagnoses { get; set; }
+    
+    public DbSet<DepartmentType> DepartmentTypes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -69,6 +71,9 @@ public class HospitalContext : DbContext
         modelBuilder.Entity<MedicalRecord>().HasMany(medicalRecord => medicalRecord.DoctorAppointments)
             .WithOne(appointment => appointment.MedicalRecord).HasForeignKey(appointment => appointment.MedicalRecordId);
 
+        modelBuilder.Entity<Department>().HasOne(department => department.DepartmentType)
+            .WithMany(departmentType => departmentType.Departments).HasForeignKey(department=>department.DepartmentTypeId);
+        
         base.OnModelCreating(modelBuilder);
     }
 }
