@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.ServiceLayer", "Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Presentation", "Hospital.Presentation\Hospital.Presentation.csproj", "{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{CC1336F2-7212-48E7-8A5A-43CAB67380F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{ED58644D-03E4-43B4-9854-783C84D01B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2A1BEE-3AD0-46AE-A599-64730EA300D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC1336F2-7212-48E7-8A5A-43CAB67380F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC1336F2-7212-48E7-8A5A-43CAB67380F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC1336F2-7212-48E7-8A5A-43CAB67380F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1336F2-7212-48E7-8A5A-43CAB67380F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED58644D-03E4-43B4-9854-783C84D01B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED58644D-03E4-43B4-9854-783C84D01B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED58644D-03E4-43B4-9854-783C84D01B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED58644D-03E4-43B4-9854-783C84D01B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

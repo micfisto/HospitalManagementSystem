@@ -8,4 +8,8 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Hospital.ServiceLayer\Hospital.ServiceLayer.csproj" />
+    </ItemGroup>
+
 </Project>
