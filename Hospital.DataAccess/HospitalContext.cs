@@ -9,18 +9,26 @@ namespace Hospital.DataAccess;
 
 public class HospitalContext : DbContext
 {
-    public DbSet<Employee> Employees { get; set; }
-    public DbSet<Patient> Patients { get; set; }
-    public DbSet<Department> Departments { get; set; }
-    public DbSet<DoctorAppointment> DoctorAppointments { get; set; }
-    public DbSet<Diagnosis> Diagnoses { get; set; }
-    
-    public DbSet<DepartmentType> DepartmentTypes { get; set; }
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=hospital.db");
+        optionsBuilder.UseSqlite("Data Source=D:/3-study_stack/Labs/CSharp/HospitalManagementSystem/hospital.db");
     }
+
+    public DbSet<Employee> Employees { get; set; }
+    public DbSet<Doctor> Doctors { get; set; }
+    public DbSet<Nurse> Nurses { get; set; }
+    public DbSet<Specialization> Specializations { get; set; }
+    public DbSet<Qualification> Qualifications { get; set; }
+    public DbSet<Patient> Patients { get; set; }
+    public DbSet<MedicalRecord> MedicalRecords { get; set; }
+    public DbSet<Epicrisis> Epicrisis { get; set; }
+    public DbSet<Department> Departments { get; set; }
+    public DbSet<DepartmentType> DepartmentTypes { get; set; }
+    public DbSet<DoctorAppointment> DoctorAppointments { get; set; }
+    public DbSet<Treatment> Treatments { get; set; }
+    public DbSet<Diagnosis> Diagnoses { get; set; }
+    public DbSet<Symptom> Symptoms { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

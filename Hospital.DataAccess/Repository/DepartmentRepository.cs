@@ -4,7 +4,7 @@ using Models.Departments;
 
 namespace Hospital.DataAccess.Repository;
 
-public class DepartmentRepository:IDepartmentRepository
+public class DepartmentRepository:IRepository<Department>
 {
     private HospitalContext _context;
 
@@ -12,8 +12,8 @@ public class DepartmentRepository:IDepartmentRepository
     {
         _context = context;
     }
-    
-    public async Task<Department?> GetIdAsync(Guid id)
+
+    public async Task<Department?> GetByIdAsync(Guid id)
     {
         return await _context.Departments.Include(department => department.Employees).FirstOrDefaultAsync(department => department.Id==id);
     }

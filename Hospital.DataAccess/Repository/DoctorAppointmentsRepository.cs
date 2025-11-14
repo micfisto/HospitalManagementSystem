@@ -4,7 +4,7 @@ using Models.DoctorAppointments;
 
 namespace Hospital.DataAccess.Repository;
 
-public class DoctorAppointmentsRepository : IDoctorAppointmentRepository
+public class DoctorAppointmentsRepository : IRepository<DoctorAppointment>
 {
     private HospitalContext _context;
 
@@ -13,12 +13,11 @@ public class DoctorAppointmentsRepository : IDoctorAppointmentRepository
         _context = context;
     }
 
-    public async Task<DoctorAppointment?> GetIdAsync(Guid id)
+    public async Task<DoctorAppointment?> GetByIdAsync(Guid id)
     {
         return await _context.DoctorAppointments.Include(doctorAppointment => doctorAppointment.Doctor)
             .Include(doctorAppointment => doctorAppointment.Patient)
-            .FirstOrDefaultAsync(doctorAppointment => doctorAppointment.Id == id);
-    }
+            .FirstOrDefaultAsync(doctorAppointment => doctorAppointment.Id == id);    }
 
     public async Task<List<DoctorAppointment>> GetAllAsync()
     {

@@ -4,7 +4,7 @@ using Models.Diagnoses;
 
 namespace Hospital.DataAccess.Repository;
 
-public class DiagnosisRepository : IDiagnosisRepository
+public class DiagnosisRepository : IRepository<Diagnosis>
 {
     private HospitalContext _context;
 
@@ -13,11 +13,10 @@ public class DiagnosisRepository : IDiagnosisRepository
         _context = context;
     }
 
-    public async Task<Diagnosis?> GetIdAsync(Guid id)
+    public async Task<Diagnosis?> GetByIdAsync(Guid id)
     {
         return await _context.Diagnoses.Include(diagnosis => diagnosis.Symptoms)
-            .FirstOrDefaultAsync(diagnosis => diagnosis.Id == id);
-    }
+            .FirstOrDefaultAsync(diagnosis => diagnosis.Id == id);    }
 
     public async Task<List<Diagnosis>> GetAllAsync()
     {

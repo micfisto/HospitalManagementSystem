@@ -2,7 +2,7 @@
 
 namespace Interfaces;
 
-public interface INurseRepository:IEmployeeRepository
+public interface INurseRepository: IEmployeeRepository<Nurse>
 {
     Task<List<Nurse>> GetNurseQualification(string qualification);
 }

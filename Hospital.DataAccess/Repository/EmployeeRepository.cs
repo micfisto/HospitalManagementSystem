@@ -4,7 +4,7 @@ using Models.Employees;
 
 namespace Hospital.DataAccess.Repository;
 
-public class EmployeeRepository : IEmployeeRepository
+public class EmployeeRepository : IRepository<Employee>
 {
     protected readonly HospitalContext Context;
 

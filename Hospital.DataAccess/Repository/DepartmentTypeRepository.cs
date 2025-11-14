@@ -4,7 +4,7 @@ using Models.Departments;
 
 namespace Hospital.DataAccess.Repository;
 
-public class DepartmentTypeRepository : IDepartmentType
+public class DepartmentTypeRepository : IRepository<DepartmentType>
 {
     private readonly HospitalContext _context;
 
@@ -13,7 +13,7 @@ public class DepartmentTypeRepository : IDepartmentType
         _context = context;
     }
 
-    public async Task<DepartmentType?> GetIdAsync(Guid id)
+    public async Task<DepartmentType?> GetByIdAsync(Guid id)
     {
         return await _context.DepartmentTypes.FirstOrDefaultAsync(type => type.Id == id);
     }

@@ -2,11 +2,7 @@
 
 namespace Interfaces;
 
-public interface IEmployeeRepository
+public interface IEmployeeRepository<T> : IRepository<Employee> where T : class
 {
-    Task<Employee?> GetByIdAsync(Guid id);
-    Task<List<Employee>> GetAllAsync();
-    Task AddAsync(Employee employee);
-    Task UpdateAsync(Employee employee);
-    Task DeleteAsync(Guid id);
+    
 }

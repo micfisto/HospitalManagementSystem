@@ -2,11 +2,7 @@
 
 namespace Interfaces;
 
-public interface IDoctorAppointmentRepository
+public interface IDoctorAppointmentRepository:IRepository<DoctorAppointment>
 {
-    Task<DoctorAppointment?> GetIdAsync(Guid id);
-    Task<List<DoctorAppointment>> GetAllAsync();
-    Task AddAsync(DoctorAppointment appointment);
-    Task UpdateAsync(DoctorAppointment appointment);
-    Task DeleteAsync(Guid id);
+
 }
