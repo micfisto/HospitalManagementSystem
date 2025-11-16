@@ -1,6 +1,4 @@
-﻿using Models.Departments;
-
-namespace Models.Patients;
+﻿namespace Models.Patients;
 
 public class Epicrisis
 {
