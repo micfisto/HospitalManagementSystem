@@ -6,9 +6,8 @@ namespace Models.Departments;
 public class Department
 {
     public Guid Id { get; set; } = Guid.NewGuid();
-    public required string Name { get; set; }
-
-    public required DepartmentType DepartmentType { get; set; }
+    public required DepartmentName DepartmentName { get; set; }
+    public DepartmentType DepartmentType { get; set; }
     public required Guid DepartmentTypeId { get; set; }
     public List<Employee> Employees { get; set; } = new();
     public required Guid EmployeeId { get; set; }
