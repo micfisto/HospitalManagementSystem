@@ -12,4 +12,12 @@
       <ProjectReference Include="..\Hospital.ServiceLayer\Hospital.ServiceLayer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MaterialDesignThemes" Version="5.3.1-ci1180" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
 </Project>
