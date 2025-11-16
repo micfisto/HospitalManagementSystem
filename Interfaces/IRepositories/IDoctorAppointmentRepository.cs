@@ -1,6 +1,6 @@
 ﻿using Models.DoctorAppointments;
 
-namespace Interfaces;
+namespace Interfaces.IRepositories;
 
 public interface IDoctorAppointmentRepository:IRepository<DoctorAppointment>
 {
